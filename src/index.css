@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: darkblue; /* For browsers that do not support gradients */
+  /*background: linear-gradient(to right, blue , darkblue);  Standard syntax (must be last) */
+  background-image: url("Assets/familyfeud2007logo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: auto 300px;
+}

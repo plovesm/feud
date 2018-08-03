@@ -1,0 +1,37 @@
+[{
+	"question": "What is your favorite Animal",
+	"answers": [
+		{"position": 1, "answer": "Horse", "survey": 44, "answercovered": true},
+		{"position": 2, "answer": "Pig", "survey": 22, "answercovered": true},
+		{"position": 3, "answer": "Cat", "survey": 20, "answercovered": true},
+		{"position": 4, "answer": "Dog", "survey": 14, "answercovered": true}
+
+	]
+
+},
+{
+	"question": "What is your favorite Food",
+	"answers": [
+		{"position": 1, "answer": "Pizza", "survey": 44, "answercovered": true},
+		{"position": 2, "answer": "Roast Beef", "survey": 22, "answercovered": true},
+		{"position": 3, "answer": "Hamburger", "survey": 20, "answercovered": true},
+		{"position": 4, "answer": "Lettuce", "survey": 10, "answercovered": true},
+		{"position": 5, "answer": "Potatoes", "survey": 4, "answercovered": true}
+
+	]
+
+},
+{
+	"question": "What is your favorite Candy",
+	"answers": [
+		{"position": 1, "answer": "Sour Patch Kids", "survey": 33, "answercovered": true},
+		{"position": 2, "answer": "Twizzler", "survey": 30, "answercovered": true},
+		{"position": 3, "answer": "Milky Way", "survey": 20, "answercovered": true},
+		{"position": 4, "answer": "Gummy Bears", "survey": 10, "answercovered": true},
+		{"position": 5, "answer": "Sweet Tarts", "survey": 4, "answercovered": true},
+		{"position": 6, "answer": "Skittles", "survey": 3, "answercovered": true}
+
+	]
+
+}
+]
