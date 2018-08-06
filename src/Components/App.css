@@ -3,6 +3,21 @@
   
 }
 
+.App .logoDiv {
+  height: 350px;
+  line-height: 350px;
+  text-align: center;
+  font-size: xx-large;
+  color: gold;
+}
+
+.logoDiv span {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: normal;
+
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

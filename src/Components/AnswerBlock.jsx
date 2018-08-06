@@ -5,6 +5,7 @@ function AnswerBlock(props) {
 
 	return (
 		<div className="answer-block">
+			
 			<div 
 				className={(props.covered) ? "answer-covered": "answer-revealed"}
 				onClick={() => props.onClick()}>
