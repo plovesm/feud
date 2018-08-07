@@ -1,23 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Clang from '../Audio/Right_clang.mp3';
 import './AnswerBlock.css';
 
-function AnswerBlock(props) {
+class AnswerBlock extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			covered: true,
+			answer: props.answer,
+			survey: props.survey,
+			position: props.position,
+		}
+	}
 
-	return (
-		<div className="answer-block">
-			
+	renderContent() {
+		console.log(this.state.covered);
+		return (
+			(this.state.covered) ? this.state.position : this.state.answer + " : " + this.state.survey
+		)
+	}
+
+	render () {
+		return (
 			<div 
-				className={(props.covered) ? "answer-covered": "answer-revealed"}
-				onClick={() => props.onClick()}>
-				{props.answer}&nbsp;:&nbsp;{props.survey}
+				className="answer-block"
+				onClick={() => {
+						if(this.state.covered) {
+							const clang = new Audio(Clang);
+							clang.play();
+						}
+						this.setState({covered: !this.state.covered})
+					}
+				}
+			>
+				<div className={(this.state.covered) ? "answer-covered": "answer-revealed"}>
+					{this.renderContent()}
+				</div>
+				
 			</div>
-			<div 
-				className={(!props.covered) ? "answer-covered": "answer-revealed"}
-				onClick={() => props.onClick()}>
-				{props.position}
-			</div>
-		</div>
-	);
+		);
+	}
 }
 
 export default AnswerBlock;

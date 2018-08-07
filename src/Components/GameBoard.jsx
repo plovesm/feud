@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import AnswerBlock from './AnswerBlock';
-import Clang from '../Audio/Right_clang.mp3';
+import ErrorBlock from './ErrorBlock';
 
 function GameBoard(props) {
-	const clang = new Audio(Clang);
-
+	
 	return (
 		<Fragment>
 			{props.questions.map(q => {
@@ -20,23 +19,15 @@ function GameBoard(props) {
 			        					key={a.survey + a.answer} 
 			        					survey={a.survey} 
 		        						answer={a.answer}
-		        						covered={a.answercovered}
-		        						onClick={() => {
-			        							a.answercovered = !a.answercovered;
-			        							
-			        							//Play the clang sound if uncovering
-			        							if(a.answercovered === false){
-			        								clang.play();
-			        							}
-
-												props.refreshState({});
-			        							return;
-			        						} 
-			        					}
+		        						refresh={(r) => {props.refreshState(r)}}
+		        						
 		        						/>
 		        				);
 		        			})}
 		        		</div>
+		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
+		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
+		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
 		        	</div>
 		       	);
 		    })}

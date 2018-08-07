@@ -1,7 +1,7 @@
 .answer-board {
 	margin: auto;
-	margin-top: 300px;
-	margin-bottom: 300px;
+	margin-top: 320px;
+	margin-bottom: 320px;
 	width: 850px;
 	border: 1px solid #ccc;
 	background-color: #1e90ff;
@@ -22,11 +22,11 @@
 }
 
 .answer-covered {
-	display: none;
+	background: linear-gradient(to right, khaki, yellow);
+	padding: 10px;
 }
 
 .answer-revealed {
-	background: linear-gradient(to right, khaki, yellow);
 	padding: 10px;
 
 }
