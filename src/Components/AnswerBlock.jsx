@@ -10,6 +10,7 @@ class AnswerBlock extends Component {
 			answer: props.answer,
 			survey: props.survey,
 			position: props.position,
+			clang: new Audio(Clang),
 		}
 	}
 
@@ -26,8 +27,7 @@ class AnswerBlock extends Component {
 				className="answer-block"
 				onClick={() => {
 						if(this.state.covered) {
-							const clang = new Audio(Clang);
-							clang.play();
+							this.state.clang.play();
 						}
 						this.setState({covered: !this.state.covered})
 					}

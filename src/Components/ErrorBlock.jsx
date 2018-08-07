@@ -7,6 +7,7 @@ class ErrorBlock extends Component {
 		super(props)
 		this.state = {
 			checked: false,
+			buzz: new Audio(Buzz),
 		};
 	} 
 
@@ -17,8 +18,7 @@ class ErrorBlock extends Component {
 				className={(this.state.checked) ? "error-block marked" : "error-block"} 
 				onClick={() => {
 					if(!this.state.checked){
-						const buzz = new Audio(Buzz);
-						buzz.play();
+						this.state.buzz.play();
 					}
 					this.setState({checked: !this.state.checked})
 					}
