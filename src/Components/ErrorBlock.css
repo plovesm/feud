@@ -1,0 +1,18 @@
+.error-block {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	border: 4px #cccccc solid;
+	color: transparent;
+	font-size: xx-large;
+	font-weight: bolder;
+	margin: 10px;
+}
+
+.marked {
+	border: 4px red solid;
+	color: red;
+
+}
