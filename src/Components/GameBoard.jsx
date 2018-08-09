@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import AnswerBlock from './AnswerBlock';
 import ErrorBlock from './ErrorBlock';
+import './GameBoard.css';
 
 function GameBoard(props) {
 	
@@ -8,7 +9,7 @@ function GameBoard(props) {
 		<Fragment>
 			{props.questions.map(q => {
 		        return(
-		        	<div className="answer-board" key={q.question}>
+		        	<div className="gameboard" key={q.question}>
 		        		<div key={Math.random()}>
 			        		<h1>{q.question}</h1>
 			        	

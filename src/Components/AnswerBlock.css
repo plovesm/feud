@@ -1,13 +1,3 @@
-.answer-board {
-	margin: auto;
-	margin-top: 320px;
-	margin-bottom: 320px;
-	width: 850px;
-	border: 1px solid #ccc;
-	background-color: #1e90ff;
-	padding: 20px;
-}
-
 .answer-block {
 	display: inline-block;
 	padding: 10px;
