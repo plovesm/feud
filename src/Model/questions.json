@@ -190,5 +190,59 @@
 
 	]
 
+},
+{
+	"question": "Name something you might buy at a gas station.",
+	"answers": [
+		{"position": 1, "answer": "Gas", "survey": 44, "answercovered": true},
+		{"position": 2, "answer": "Gum / Candy", "survey": 16, "answercovered": true},
+		{"position": 3, "answer": "Soda / Water", "survey": 15, "answercovered": true},
+		{"position": 4, "answer": "Coffee", "survey": 10, "answercovered": true},
+		{"position": 5, "answer": "Chips", "survey": 4, "answercovered": true},
+		{"position": 6, "answer": "Lottery", "survey": 3, "answercovered": true},
+		{"position": 7, "answer": "Meal / Breakfast", "survey": 2, "answercovered": true},
+		{"position": 8, "answer": "Car wash", "survey": 2, "answercovered": true}
+
+	]
+
+},
+{
+	"question": "Name an animal some people keep as a pet that you would never allow in your house.",
+	"answers": [
+		{"position": 1, "answer": "Snake", "survey": 37, "answercovered": true},
+		{"position": 2, "answer": "Rat", "survey": 21, "answercovered": true},
+		{"position": 3, "answer": "Lizard", "survey": 19, "answercovered": true},
+		{"position": 4, "answer": "Tarantula", "survey": 5, "answercovered": true},
+		{"position": 5, "answer": "Mouse", "survey": 5, "answercovered": true},
+		{"position": 6, "answer": "Cockroach", "survey": 4, "answercovered": true},
+		{"position": 7, "answer": "Dog", "survey": 2, "answercovered": true}
+
+	]
+
+},
+{
+	"question": "Name a type of bear.",
+	"answers": [
+		{"position": 1, "answer": "Grizzly", "survey": 27, "answercovered": true},
+		{"position": 2, "answer": "Polar", "survey": 22, "answercovered": true},
+		{"position": 3, "answer": "Panda", "survey": 21, "answercovered": true},
+		{"position": 4, "answer": "Teddy", "survey": 10, "answercovered": true},
+		{"position": 5, "answer": "Brown", "survey": 4, "answercovered": true},
+		{"position": 6, "answer": "Black", "survey": 3, "answercovered": true}
+
+	]
+
+},
+{
+	"question": "Name something you might wear while driving.",
+	"answers": [
+		{"position": 1, "answer": "Seatbelt / Safety Belt", "survey": 33, "answercovered": true},
+		{"position": 2, "answer": "Sunglasses", "survey": 27, "answercovered": true},
+		{"position": 3, "answer": "Eyeglasses", "survey": 22, "answercovered": true},
+		{"position": 4, "answer": "Gloves", "survey": 9, "answercovered": true},
+		{"position": 5, "answer": "Shoes", "survey": 5, "answercovered": true}
+
+	]
+
 }
 ]
