@@ -6,7 +6,7 @@ class AnswerBlock extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			covered: true,
+			covered: props.covered,
 			answer: props.answer,
 			survey: props.survey,
 			position: props.position,

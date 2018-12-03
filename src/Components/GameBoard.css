@@ -7,3 +7,24 @@
 	background-color: #1e90ff;
 	padding: 20px;
 }
+
+.answerSheet {
+	display: inline-block;
+	margin: 10px;
+	width: 650px;
+	padding: 5px;
+	font-size: smaller;
+}
+
+.answerSheet .answer-block {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #eee;
+	box-shadow: 1px 1px #ccc;
+	margin: 5px;
+	width: 200px;
+	text-align: center;
+	background-color: none;
+	font-weight: bold;
+	font-size: normal;
+}

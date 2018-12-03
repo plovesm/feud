@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import AnswerBlock from './AnswerBlock';
-import ErrorBlock from './ErrorBlock';
 import NewGameImg from '../Assets/newgame.png';
-import './GameBoard.css';
 
-function GameBoard(props) {
+
+function AnswerSheet(props) {
 	
 	return (
 		<Fragment>
@@ -12,7 +11,7 @@ function GameBoard(props) {
 				
 			{props.questions.map(q => {
 		        return(
-		        	<div className="gameboard" key={q.question}>
+		        	<div className="gameboard answerSheet" key={q.question}>
 		        		<div key={Math.random()}>
 			        		<h1>{q.question}</h1>
 			        	
@@ -23,16 +22,13 @@ function GameBoard(props) {
 			        					key={a.survey + a.answer} 
 			        					survey={a.survey} 
 		        						answer={a.answer}
-		        						covered={true}
+		        						covered={false}
 		        						refresh={(r) => {props.refreshState(r)}}
 		        						
 		        						/>
 		        				);
 		        			})}
 		        		</div>
-		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
-		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
-		        		<ErrorBlock refresh={(r) => {props.refreshState(r)}} />
 		        	</div>
 		       	);
 		    })}
@@ -42,4 +38,4 @@ function GameBoard(props) {
 
 }
 
-export default GameBoard;
+export default AnswerSheet;

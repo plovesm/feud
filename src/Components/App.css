@@ -6,7 +6,6 @@
 .App .logoDiv {
   height: 350px;
   line-height: 350px;
-  text-align: center;
   font-size: xx-large;
   color: gold;
 }
@@ -15,6 +14,9 @@
   display: inline-block;
   vertical-align: bottom;
   line-height: normal;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid yellow;
 
 }
 
@@ -36,6 +38,17 @@
 
 .App-intro {
   font-size: large;
+}
+
+.actionIcon{
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 30px;
+  text-align: left;
+  cursor: pointer;
+  color: blue;
 }
 
 @keyframes App-logo-spin {
